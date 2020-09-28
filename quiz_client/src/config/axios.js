@@ -1,6 +1,6 @@
 import Axios from 'axios';
 const axios = Axios.create({
-  baseURL: 'http://localhost:3030/api',
+  baseURL: 'https://quiz-app-rohan.herokuapp.com/api',
 });
 
 export default axios;
