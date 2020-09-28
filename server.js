@@ -14,9 +14,6 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/api/', router);
-app.get('/', (req, res) => {
-  res.send('Welcome to Quiz App');
-});
 
 //* Handles any requests that don't match the ones above
 app.get('/*', (req, res) => {
