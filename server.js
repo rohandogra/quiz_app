@@ -13,6 +13,8 @@ configDB();
 app.use(express.json());
 app.use(cors());
 
+app.use(express.static(path.join(__dirname, 'quiz_client/build')));
+
 app.use('/api/', router);
 
 //* Handles any requests that don't match the ones above
