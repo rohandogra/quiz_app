@@ -26,10 +26,10 @@ const Quiz = (props) => {
         const ans = props?.selectedQuiz && props?.selectedQuiz?.map(ele => ele.all_answers)
         props?.selectedQuiz && ans[current].sort(function () {
             return Math.random() - .5;
-        });
+        })
     }
 
-    shuffle()
+    props?.selectedQuiz && all_answers[current] && shuffle()
 
     const onChange3 = (e) => {
         setValue(e.target.value)
